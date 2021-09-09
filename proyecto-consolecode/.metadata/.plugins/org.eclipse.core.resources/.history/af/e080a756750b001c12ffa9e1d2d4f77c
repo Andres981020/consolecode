@@ -1,0 +1,44 @@
+package com.consolecode.service.imp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.consolecode.model.Persona;
+import com.consolecode.repository.IPersonaRepository;
+import com.consolecode.service.IPersonaService;
+
+public class PersonaServiceImpl implements IPersonaService {
+
+	@Autowired
+	IPersonaRepository repo;
+	
+	@Override
+	public List<Persona> listar() {
+		return (List<Persona>) repo.findAll();
+	}
+
+	@Override
+	public Persona registrar(Persona persona) {
+		return repo.save(persona);
+	}
+
+	@Override
+	public Persona actualizar(Persona persona) {
+		// TODO Auto-generated method stub
+		return repo.save(persona);
+	}
+
+	@Override
+	public void eliminar(Integer codigo) {
+		repo.deleteById(codigo);
+
+	}
+
+	@Override
+	public Persona ListarPorId(Integer codigo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

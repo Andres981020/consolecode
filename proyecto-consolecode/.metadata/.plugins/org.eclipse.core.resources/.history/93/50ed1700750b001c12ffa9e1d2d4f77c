@@ -1,0 +1,40 @@
+package com.consolecode.service.imp;
+
+import java.util.List;
+
+import com.consolecode.model.Persona;
+import com.consolecode.service.IPersonaService;
+
+public class PersonaServiceImpl implements IPersonaService {
+
+	@Override
+	public List<Persona> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Persona registrar(Persona persona) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Persona actualizar(Persona persona) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminar(Integer codigo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Persona ListarPorId(Integer codigo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

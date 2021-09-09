@@ -1,0 +1,12 @@
+package com.consolecode.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.consolecode.service.IPersonaService;
+
+public class PersonaController {
+	
+	@Autowired
+	private IPersonaService service;
+
+}

@@ -1,0 +1,41 @@
+package com.consolecode.service.imp;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.consolecode.model.Pais;
+import com.consolecode.model.Persona;
+import com.consolecode.repository.IPaisRepository;
+import com.consolecode.service.IPaisService;
+
+public class PaisServiceImpl implements IPaisService {
+
+	@Autowired
+	private IPaisRepository repo;
+	@Override
+	public List<Pais> listar() {
+		return (List<Pais>) repo.findAll();
+	}
+
+	@Override
+	public Pais registrar(Pais pais) {
+		return repo.save(pais);
+	}
+
+	@Override
+	public Pais actualizar(Pais pais) {
+		return repo.save(pais);
+	}
+
+	@Override
+	public void eliminar(Integer codigo) {
+
+	}
+
+	@Override
+	public Pais ListarPorId(Integer codigo) {
+		return null;
+	}
+
+}

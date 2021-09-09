@@ -1,0 +1,14 @@
+package com.consolecode.service;
+
+import java.util.List;
+
+import com.consolecode.model.Persona;
+
+public interface IPaisService {
+
+	List<Pais> listar();
+	Pais registrar(Persona pais);
+	Pais actualizar(Persona pais);
+	void eliminar(Integer codigo);
+	Pais ListarPorId(Integer codigo);
+}

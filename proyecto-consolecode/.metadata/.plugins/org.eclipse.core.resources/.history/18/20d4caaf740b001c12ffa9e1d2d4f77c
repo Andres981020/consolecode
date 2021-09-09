@@ -1,0 +1,5 @@
+package com.consolecode.service;
+
+public interface IPersonaService {
+
+}

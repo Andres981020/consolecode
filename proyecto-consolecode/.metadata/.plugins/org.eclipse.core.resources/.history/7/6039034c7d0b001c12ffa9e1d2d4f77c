@@ -1,0 +1,20 @@
+package com.consolecode.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.consolecode.model.Pais;
+import com.consolecode.service.IPaisService;
+
+@RestController
+public class PaisController {
+
+	@Autowired
+	private IPaisService service;
+	
+	public List<Pais> listar(){
+		return service.listar();
+	}
+}
